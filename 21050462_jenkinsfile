@@ -20,7 +20,7 @@ pipeline{
 		}
 		steps{
 			sh """#!/bin/bash
-			docker cp '/operate_repo/21050462_script' puppetclient://'/testdir/operate_repo/clone/21050462_script';
+			docker cp '/operate_repo/21050462_script' puppetclient://'/testdir/clone/operate_repo/21050462_script';
 			bolt script run '/testdir/clone/operate_repo/21050462_script' -t puppetclient -u clientadm -p user123 --no-host-key-check --run-as root;
 			"""
 			echo "Stage 3 Completed-21050462"
