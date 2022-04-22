@@ -20,7 +20,7 @@ pipeline{
 		}
 		steps{
 			sh """#!/bin/bash
-			bolt script run '/operate_repo/script_dir/21050462_script' -t puppetclient -u clientadm -p user123 --no-host-key-check --run-as root;
+			bolt script run '/21050462/script_dir/21050462_script' -t puppetclient -u clientadm -p user123 --no-host-key-check --run-as root;
 			"""
 			echo "Stage 3 Completed-21050462"
 			}
