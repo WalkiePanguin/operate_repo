@@ -35,6 +35,6 @@ pipeline{
 			steps{
 				echo 'Production website is updated successfully'
 			}
-
+		}
 	}
 }
